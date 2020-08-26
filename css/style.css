@@ -1,0 +1,56 @@
+header {
+  background-image: url(../images/smartphone-beside-computer-keyboard-on-black-surface-3740723.jpg);
+  border-radius: inherit;
+  height: 100px;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding-left: 0;
+}
+
+ul li {
+  margin-right: 30px;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  background-color: #272727;
+  font-family: "Roboto", sans-serif;
+  color: #FFFDEC;
+}
+
+.wrapper {
+  max-width: 1200px;
+  border: 2px solid #424345;
+  border-radius: 20px;
+  margin: 20px auto;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #35393A, #171719);
+}
+
+a {
+  text-decoration: none;
+  color: #FFFDEC;
+}
+
+ul {
+  list-style-type: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,33 @@
+header {
+    background-image: url(../images/smartphone-beside-computer-keyboard-on-black-surface-3740723.jpg);
+    border-radius: inherit;
+    height: 100px;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-left: 0;
+}
+
+ul li {
+    margin-right: 30px;
+
+}
+
+input {
+
+}
