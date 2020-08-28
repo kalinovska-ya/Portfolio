@@ -121,6 +121,10 @@ const lang = {
     "get.in.touch.text.key": {
       "en": "Will be glad to contact. Send me message without hesitated",
       "ru": "Всегда рада общению. Если у вас появятся какие-либо вопросы - отправьте мне сообщение"
+    },
+    "tap.for.key": {
+      "en": "tap for description",
+      "ru": "нажмите для описания"
     }
 }
 

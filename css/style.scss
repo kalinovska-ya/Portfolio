@@ -13,8 +13,10 @@ body {
     $text-color: #22222b;
     $gradient: linear-gradient(to top, #bdbdbd, #FFFFFF);
     $dark-color: #22222b; 
-    $red-color: rgb(175, 19, 19);
+    $red-color: #af1313;
     $line-color: #bababb;
+    $footer-color: #f1ebeb9d;
+    $header-gradient: linear-gradient(to right, transparent 0%, #ffffff6c 50%, transparent 100%);
     background-color: $bg-color;
     color: $text-color;
 
@@ -25,13 +27,13 @@ body {
     @import 'footer';
 
     .wrapper {
-        max-width: 1200px;
-        border: 1px solid #424345;
-        border-radius: 10px;
-        margin: 10px auto;
+        // max-width: 1200px;
+        // border: 1px solid #424345;
+        // border-radius: 10px;
+        // margin: 10px auto;
         min-height: 100vh;
         background-image: $gradient;
-        overflow: hidden;
+        // overflow: hidden;
     }
 
     a {
@@ -44,6 +46,8 @@ body {
         $text-color: #FFFDEC;
         $gradient: linear-gradient(to bottom, #2f2f2f, #171719);
         $line-color: #FFFDEC;
+        $footer-color: #0000008f;
+        $header-gradient: linear-gradient(to right, transparent 0%, #07070779 50%, transparent 100%);
         background-color: $bg-color;
         color: $text-color;
 
@@ -63,29 +67,21 @@ body {
     }
 }
 
-
-$text-color: #FFFDEC;
-$red-color: red;
-$dark-color: #22222b; 
-$dark: #22222b;
-$light: #faf9fe;
-$text: #7f7f82;
-
 ul {
     list-style-type: none;
 }
 
-@media screen and (max-width: 1200px) {
-    .all-page .wrapper {
-        margin: 0.6em;
-    }
-}
+// @media screen and (max-width: 1200px) {
+//     .all-page .wrapper {
+//         margin: 0.6em;
+//     }
+// }
 
-@media screen and (max-width: 500px) {
-    .all-page .wrapper {
-        margin: calc(0.6em / 2);
-    }
-}
+// @media screen and (max-width: 500px) {
+//     .all-page .wrapper {
+//         margin: calc(0.6em / 2);
+//     }
+// }
 
 
 
