@@ -14,16 +14,23 @@ body {
   color: #22222b;
 }
 .all-page .bg-wrapper {
-  background-image: url(../images/pexels-bongkarn-thanyakij-3773414.jpg);
+  background-image: url(../images/light-theme.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   padding-bottom: 100px;
+  height: 100%;
+  overflow: hidden;
 }
 .all-page .bg-wrapper.dark {
-  background-image: url(../images/pexels-bongkarn-thanyakij-3740449.jpg);
+  background-image: url(../images/dark-theme.jpg);
   animation: 2.5s ease both fade;
 }
 .all-page .bg-wrapper.light {
-  background-image: url(../images/pexels-bongkarn-thanyakij-3773414.jpg);
+  background-image: url(../images/light-theme.jpg);
   animation: 2.5s ease both fade;
 }
 @keyframes fade {
@@ -526,16 +533,23 @@ body {
   color: #FFFDEC;
 }
 .all-page[data-theme=dark] .bg-wrapper {
-  background-image: url(../images/pexels-bongkarn-thanyakij-3773414.jpg);
+  background-image: url(../images/light-theme.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   padding-bottom: 100px;
+  height: 100%;
+  overflow: hidden;
 }
 .all-page[data-theme=dark] .bg-wrapper.dark {
-  background-image: url(../images/pexels-bongkarn-thanyakij-3740449.jpg);
+  background-image: url(../images/dark-theme.jpg);
   animation: 2.5s ease both fade;
 }
 .all-page[data-theme=dark] .bg-wrapper.light {
-  background-image: url(../images/pexels-bongkarn-thanyakij-3773414.jpg);
+  background-image: url(../images/light-theme.jpg);
   animation: 2.5s ease both fade;
 }
 @keyframes fade {
@@ -1029,4 +1043,15 @@ body {
 
 ul {
   list-style-type: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .all-page .wrapper {
+    margin: 0.6em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .all-page .wrapper {
+    margin: calc(0.6em / 2);
+  }
 }

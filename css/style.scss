@@ -83,6 +83,18 @@ ul {
     list-style-type: none;
 }
 
+@media screen and (max-width: 1200px) {
+    .all-page .wrapper {
+        margin: 0.6em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .all-page .wrapper {
+        margin: calc(0.6em / 2);
+    }
+}
+
 
 
 
