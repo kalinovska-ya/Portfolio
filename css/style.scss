@@ -14,11 +14,7 @@ body {
     $gradient: linear-gradient(to top, #bdbdbd, #FFFFFF);
     $dark-color: #22222b; 
     $red-color: rgb(175, 19, 19);
-    $_primary-color: #302ae6;
-    $secondary-color: #536390;
-    $font-color: #424242;
-    $bg-color: #fff;
-    $heading-color: #292922;
+    $line-color: #bababb;
     background-color: $bg-color;
     color: $text-color;
 
@@ -47,11 +43,7 @@ body {
         $bg-color: #272727;
         $text-color: #FFFDEC;
         $gradient: linear-gradient(to bottom, #2f2f2f, #171719);
-        $_primary-color: #9a97f3;
-        $secondary-color: #818cab;
-        $font-color: #e1e1ff;
-        $bg-color: #080808;
-        $heading-color: #818cab;
+        $line-color: #FFFDEC;
         background-color: $bg-color;
         color: $text-color;
 

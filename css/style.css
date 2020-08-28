@@ -10,7 +10,7 @@ body {
 }
 
 .all-page {
-  background-color: #fff;
+  background-color: #c4c4c4;
   color: #22222b;
 }
 .all-page .bg-wrapper {
@@ -250,7 +250,7 @@ body {
 .all-page .progress-bar__line {
   height: 2px;
   width: 100%;
-  background-color: #22222b;
+  background-color: #bababb;
   position: relative;
 }
 .all-page .progress-bar__line::before {
@@ -529,7 +529,7 @@ body {
   color: #22222b;
 }
 .all-page[data-theme=dark] {
-  background-color: #080808;
+  background-color: #272727;
   color: #FFFDEC;
 }
 .all-page[data-theme=dark] .bg-wrapper {
