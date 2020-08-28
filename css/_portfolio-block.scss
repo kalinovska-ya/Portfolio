@@ -1,0 +1,149 @@
+// $text-color: #FFFDEC; 
+// $red-color: red;
+$dark-color: #22222b;
+
+.portfolio-block {
+    padding: 0 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .portfolio__h2 {
+        font-size: 30px;
+        font-weight: 400;
+    }
+}
+
+.portfolio {
+    display: grid;
+    margin-top: 83px;
+    grid-template: repeat(7,88px) / 1fr 1fr 1fr;
+    grid-gap: 40px;
+
+    &-01 {
+        grid-column: 1/2;
+        grid-row: 1/4;
+    }
+
+    &-02 {
+        grid-column: 2/3;
+        grid-row: 1/8;
+    }
+
+    &-03 {
+        grid-column: 3/4;
+        grid-row: 1/4;
+    }
+
+    &-04 {
+        grid-column: 1/2;
+        grid-row: 4/8;
+    }
+
+    &-05 {
+        grid-column: 3/4;
+        grid-row: 4/8;
+    }
+
+    &-thumb {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+
+        img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 340px; 
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.cover {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.774);
+    position: relative;
+    transition: all 0.4s cubic-bezier(.99,.99,0,.61);
+    padding: 20px 30px;
+    color: #FFFFFF;
+    overflow: hidden;
+    text-shadow: 1px 1px 0px #000;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    &__intro {
+        line-height: 1.2em;
+        height: 4.8em;
+    }
+
+    &__btn {
+        padding: 0.5em 1em;
+        margin-bottom: 10px;
+        background: $dark-color;
+        border: 1px solid #FFFDEC;
+        border-radius: 0.15em;
+        max-width: 250px;
+        position: relative;
+
+        & a::before {
+            position: absolute;
+            left: 6px;
+            top: 17px;
+            content: '';
+            display: block;
+            width: 0px;
+            height: 1px;
+            background-color: #FFFDEC;
+        }
+
+        &:hover a{
+            margin-left: 20px;
+
+            &::before {
+                width: 20px;
+            }
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            transition: .2s;
+        }
+    }
+
+    &__tags {
+        margin-top: 30px;
+        text-align: right;
+        font-size: 12px;
+    }
+}
+
+.portfolio-item:hover .bottom{
+    transition: all 0.4s cubic-bezier(.99,.99,0,.61);
+    bottom: 0px;
+}
+
+.bottom{
+    bottom: -1000px;
+}
+

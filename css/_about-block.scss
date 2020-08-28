@@ -1,0 +1,185 @@
+.about {
+    padding: 0 50px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.box-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__h2 {
+        margin-top: 12px;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    &__front {
+        width: 100%; 
+        height: 100%;
+        margin-bottom: 60px;
+    }
+
+    &-item {
+        flex: 0 0 46%;
+        max-width: 46%;
+        position: relative;
+
+        &:first-child {
+            display: flex;
+            justify-content: center;
+            flex: 0 0 50%;
+        }
+    }
+
+    &__text {
+        color: $text-color;
+        line-height: 1.5;
+        margin-bottom: 48px;
+    }
+}
+
+.progress-bar {
+
+    &__text {
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 21px;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__line {
+        height: 2px;
+        width: 100%;
+        background-color: $text-color;
+        position: relative;
+
+        &::before {
+            content: "〉";
+            color: $red-color;
+            display: block;
+            width: 6px;
+            height: 11px;
+            position: absolute;
+            left: -5px;
+            top: calc(50% - 8px);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            left: 0;
+            height: 2px;
+            width: 0%;
+        }
+    }
+
+    &__percent {
+        opacity: 0;
+    }
+
+}
+
+.progress-bar__percent.animate {
+    animation: 1.5s 1s ease both visiblePercent;
+}
+
+@keyframes visiblePercent {
+    0% {
+       opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.progress-bar__line.progress-bar--html.animate::after {
+    animation: 1.5s ease both draw;
+}
+
+@keyframes draw {
+    0% {
+        background-color: transparent;
+        width: 0%;
+    }
+
+    100% {
+        background-color: $red-color;
+        width: 90%;
+    }
+}
+
+.progress-bar__line.progress-bar--php.animate::after {
+    animation: 1.5s ease both draw2;
+}
+
+@keyframes draw2 {
+    0% {
+        background-color: transparent;
+        width: 0%;
+    }
+
+    100% {
+        background-color: $red-color;
+        width: 60%;
+    }
+}
+
+.progress-bar__line.progress-bar--js.animate::after {
+    animation: 1.5s ease both draw3;
+}
+
+@keyframes draw3 {
+    0% {
+        background-color: transparent;
+        width: 0%;
+    }
+
+    100% {
+        background-color: $red-color;
+        width: 65%;
+    }
+}
+
+
+.cv {
+    margin-top: 60px;
+
+    &__link {
+        font-weight: 600;
+        font-size: 1.1em;
+        transition: .2s;
+
+        &:hover {
+            color: $red-color;
+            text-decoration: underline;
+        }
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .about {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .box-about {
+        flex-direction: column;
+
+
+        &-item {
+            width: 100%;
+            max-width: none;
+        }
+    } 
+}

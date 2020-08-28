@@ -1,33 +1,211 @@
-header {
-    background-image: url(../images/smartphone-beside-computer-keyboard-on-black-surface-3740723.jpg);
-    border-radius: inherit;
-    height: 100px;
+.bg-wrapper {
+    background-image: url(../images/pexels-bongkarn-thanyakij-3773414.jpg);
     background-size: cover;
+    padding-bottom: 100px;
+}
+
+.bg-wrapper.dark {
+    background-image: url(../images/pexels-bongkarn-thanyakij-3740449.jpg);
+        animation: 2.5s ease both fade;
+}
+
+.bg-wrapper.light {
+    background-image: url(../images/pexels-bongkarn-thanyakij-3773414.jpg);
+    animation: 2.5s ease both fade;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.header {
+    border-radius: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    padding: 0 50px;
 }
 
-nav {
+.nav {
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-
-ul {
+.nav-menu {
     display: flex;
+    flex-wrap: wrap;
     height: 100%;
     align-items: center;
     padding-left: 0;
+    line-height: 2em;
+
+    &__item:not(:last-child){
+        margin-right: 30px;
+    }
+
+    &__link {
+    color: $text-color;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: .3s;
+        &:hover {
+            border-bottom: 1px solid $text-color;
+        }
+    }
 }
 
-ul li {
-    margin-right: 30px;
-
+.settings {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-input {
+.onoffswitch {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    margin-bottom: 2px;
+}
 
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #FFFDEC;
+    border-radius: 20px;
+    height: 30px;
+    font-weight: normal;
+    position: relative;
+    width: 65px;
+}
+
+.language-switch-label {
+    margin-right: 20px;
+}
+
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 30px;
+    padding: 0;
+    padding-top: 2px;
+    line-height: 27px;
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    background-color: $dark-color;
+    color: #FFFDEC;
+}
+
+.onoffswitch-inner:before {
+    content: "RU";
+    padding-left: 8px;
+}
+
+.onoffswitch-inner:after {
+    content: "EN";
+    padding-right: 8px;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 2px;
+    background: $dark-color;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    border: 1px solid #FFFDEC;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    left: 35px;
+}
+
+.theme-switch-label .onoffswitch-inner:before {
+    content: "DARK";
+}
+
+.theme-switch-label .onoffswitch-inner:after {
+    content: "LIGHT";
+}
+
+.title {
+    font-weight: 300;
+    position: relative;
+    margin: 100px 0 0 60px;
+    max-width: 350px;
+    padding: 10px 30px;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 28px;
+        height: 21px;
+        border-top: 1px solid $text-color;
+        border-left: 1px solid $text-color;
+        left: -20px;
+        top: -10px;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 28px;
+        height: 21px;
+        border-bottom: 1px solid $text-color;
+        border-right: 1px solid $text-color;
+        right: -20px;
+        bottom: -10px;
+    }
+
+    &__h1 {
+        font-size: 35px;
+    }
+
+    &__h2 {
+        margin: 0;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .title {
+        max-width: 200px;
+        margin: 100px auto 0;
+    }
 }

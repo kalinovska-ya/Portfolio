@@ -3,147 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AK - Portfolio</title>
+    <title data-langkey="title.key">AK - Portfolio</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 </head>
-<body>
+
+<body class="all-page">
     <div class="wrapper">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#aboutMe">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#potfolio">Portfolio</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                </ul>
-            </nav>
-            <form action="">
-                <p>Switch theme</p>
-                <label for="dark">dark</label>
-                <input type="radio" name="theme" value="dark" id="dark">
-                <label for="light">light</label>
-                <input type="radio" name="theme" value="light" id="light">
-            </form>
-            <form action="">
-                <label for="dark">EN</label>
-                <input type="radio" name="theme" value="dark" id="dark">
-                <label for="light">RU</label>
-                <input type="radio" name="theme" value="light" id="light">
-            </form>
-        </header>
-        <main>
-            <section>
-              <div class="wrapper">
-                <h1 class="title-h1">Alina Kalinovskaya <span>HTML/CSS Coder</span></h1>
-              </div></section>
-            <section>
-              <div class="wrapper">
-      <div class="box-about">
-          <div class="box-about-item">
-              <img class="box-about__back" src="./images/workplace.png" alt="Workplace">
-              <p class="box-about__vertical">Work Place</p>
-              <img class="box-about__front" src="./images/logo.jpg" alt="Photo">
-          </div>
-          <div class="box-about-item">
-              <h2 class="title h2">About Me</h2>
-              <p class="box-about__text">I'm 28-years old hotel-segment specialist,
-currently acting as software consultant for
-hotel businesses. Starting from the previous
-year I focused on a different experience and
-studying front-end development.</p>
-              <div class="progress-bar progress-bar--html">
-                  <div class="progress-bar-line"></div>
-                  <div class="progress-bar-text">
-                      <p>HTML5/CSS3</p>
-                      <p>90%</p>
-                  </div>
-              </div>
-              <div class="progress-bar">
-                  <div class="progress-bar-line progress-bar--php"></div>
-                  <div class="progress-bar-text">
-                      <p>PHP/MySQL</p>
-                      <p>65%</p>
-                  </div>
-              </div>
-              <div class="progress-bar">
-                  <div class="progress-bar-line progress-bar--js"></div>
-                  <div class="progress-bar-text">
-                      <p>JavaScript/ReactJS</p>
-                      <p>60%</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
-            <section>
-              <div class="wrapper">
-              <h2 class="title-h2 text-center">My Portfolio</h2>
-              <p class="after-title text-center">Here is all my work that i maked for some great people</p>
-              <div class="portfolio">
-                  <div class="portfolio-item portfolio-01">
-                      <div class="portfolio-thumb">
-                          <img src="./images/work1.jpg" alt="Work 01">
-                      </div>
-                  </div>
-                  <div class="portfolio-item portfolio-02">
-                      <div class="portfolio-thumb">
-                          <img src="./images/work2.jpg" alt="Work 02">
-                      </div>
-                  </div>
-                  <div class="portfolio-item portfolio-03">
-                      <div class="portfolio-thumb">
-                          <img src="./images/work3.jpg" alt="Work 03">
-                      </div>
-                  </div>
-                  <div class="portfolio-item portfolio-04">
-                      <div class="portfolio-thumb">
-                          <img src="./images/work4.jpg" alt="Work 04">
-                      </div>
-                  </div>
-                  <div class="portfolio-item portfolio-05">
-                      <div class="portfolio-thumb">
-                          <img src="./images/work5.jpg" alt="Work 05">
-                      </div>
-                  </div>
-                  <div class="portfolio-item portfolio-06">
-                      <div class="portfolio-thumb">
-                          <img src="./images/work6.jpg" alt="Work 06">
-                      </div>
-                  </div>
-              </div>
-          </div></section>
-            <section>
-              <div class="wrapper">
-              <h2 class="title-h2 text-center">Get in Touch</h2>
-              <p class="after-title text-center">Have you any quistion? Send me message without hesitated</p>
-              <div class="form-container">
-                  <div class="note"></div>
-                  <div class="fields">
-                      <form class="form" action="">
-                          <input class="form__input" name="name" type="text" placeholder="Your Full Name">
-                          <input class="form__input" name="email" type="email" placeholder="Email Address">
-                          <textarea class="form__textarea" name="message" placeholder="Your Message"></textarea>
-                          <!-- <button class="btn" type="submit" name="submit">Send Message</button> -->
-                          <input class="btn" type="submit" name="submit" value="Send Message">
-                      </form>
-                  </div>
-              </div>
-          </div></section>
-        </main>
-        <footer>
-            <ul>
-                <li><a href=""><i class="zmdi zmdi-github-alt"></i></a></li>
-                <li><a href=""><i class="zmdi zmdi-facebook"></i></a></li>
-                <li><a href=""><i class="zmdi zmdi-instagram"></i></a></li>
-                <li><a href=""><i class="zmdi zmdi-linkedin"></i></a></li>
-            </ul>
-        </footer>
+        <div class="bg-wrapper">
+            <header class="header">
+                    <nav class="nav">
+                        <ul class="nav-menu">
+                            <li class="nav-menu__item"><a class="nav-menu__link" href="#aboutMe" data-langkey="about.me.key">About Me</a></li>
+                            <li class="nav-menu__item"><a class="nav-menu__link" href="#aboutMe" data-langkey="my.skills.key">Skills</a></li>
+                            <li class="nav-menu__item"><a class="nav-menu__link" href="#portfolio" data-langkey="portfolio.key">Portfolio</a></li>
+                            <li class="nav-menu__item"><a class="nav-menu__link" href="#contacts" data-langkey="contacts.key">Contacts</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="settings">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox language-switch" id="language-change-checkbox">
+                            <label class="onoffswitch-label language-switch-label" for="language-change-checkbox">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+
+                         <div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox theme-switch" id="theme-switcher">
+                            <label class="onoffswitch-label theme-switch-label" for="theme-switcher">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="title">
+                    <h1 data-langkey="name.key" class="title__h1">Alina Kalinovskaya</h1>
+                    <h2 data-langkey="html.coder.key" class="title__h2">HTML/CSS Coder</h2>
+                    <h2 data-langkey="front.end.key" class="title__h2">Junior FrontEnd Dev.</h2>
+                </div>
+            </div>
+
+            <main>
+                <section class="about scroll scroll2" id="aboutMe">
+                    <div class="box-about">
+                        <div class="box-about-item">
+                            <!-- <img class="box-about__front" src="./images/71493770_2228949490544635_9039874713093931008_o.jpg" alt="Photo"> -->
+                            <img class="box-about__front" src="./images/Screen Shot 2020-08-26 at 23.40.40.png" alt="Photo">
+                        </div>
+                        <div class="box-about-item">
+                            <h2 class="box-about__h2">About Me</h2>
+                            <p class="box-about__text">I'm 28-years old hotel-segment specialist, currently acting as software consultant for hotel businesses. Starting from the previous year I focused on a different experience and studying front-end development</p>
+                            
+                            <div class="progress-bar">
+                                <div class="progress-bar__line progress-bar--html"></div>
+                                <div class="progress-bar__text">
+                                    <p>HTML5/CSS3</p>
+                                    <p class="progress-bar__percent">90%</p>
+                                </div>
+                            </div>
+
+                            <div class="progress-bar">
+                                <div class="progress-bar__line progress-bar--php"></div>
+                                <div class="progress-bar__text">
+                                    <p>PHP/MySQL</p>
+                                    <p class="progress-bar__percent">60%</p>
+                                </div>
+                            </div>
+
+                            <div class="progress-bar">
+                                <div class="progress-bar__line progress-bar--js"></div>
+                                <div class="progress-bar__text">
+                                    <p>JavaScript/ReactJS</p>
+                                    <p class="progress-bar__percent">65%</p>
+                                </div>
+                            </div>
+
+                            <div class="cv">
+                                <span>Full CV you may see </span>
+                                <a class="cv__link" href="./Alina Kalinovskaya (1) (1).pdf" target="_blank">here</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="portfolio-block" id="portfolio">
+                    <h2 class="portfolio__h2">My Portfolio</h2>
+                    <p class="after-title">Here are several training projects that I've made for last months</p>
+              
+                    <div class="portfolio">
+                        <div class="portfolio-item portfolio-01">
+                            <div class="portfolio-thumb">
+                                <img src="./images/Screen Shot 2020-08-27 at 00.44.41.png" height="auto" alt="Work 01">
+                                <div class="cover bottom">
+                                    <h2 class="cover__title">Telegram Chat Screen</h2>
+                                    <p class="cover__intro">UI-only adaptive group chat screen. Made to train pixel-perfect feature</p>
+                                    <div class="cover__btn"><a href="#" target="_blank">View Webpage</a></div>
+                                    <div class="cover__btn"><a href="#" target="_blank">View Repo on GitHub</a></div>
+                                    <p class="cover__tags">html/css/adaptive/pixel-perfect</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item portfolio-02">
+                            <div class="portfolio-thumb">
+                                <img src="./images/Screen Shot 2020-08-27 at 13.09.20.png" height="100%" alt="Work 02">
+                                <div class="cover bottom">
+                                    <h2 class="cover__title">Bicycle Shop Langing</h2>
+                                    <p class="cover__intro">Adaptive ladging page with parallax effect</p>
+                                    <div class="cover__btn"><a href="#" target="_blank">View Webpage</a></div>
+                                    <div class="cover__btn"><a href="#" target="_blank">View Repo on GitHub</a></div>
+                                    <p class="cover__tags">html/css/js/flex/adaptive/parallax</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item portfolio-03">
+                            <div class="portfolio-thumb">
+                                <img src="./images/Screen Shot 2020-08-27 at 12.31.00.png" height="auto" alt="Work 03">
+                                <div class="cover bottom">
+                                    <h2 class="cover__title">Portfolio Sample Page</h2>
+                                    <p class="cover__intro">Small porftolio page with php-form. Non-adaptive</p>
+                                    <div class="cover__btn"><a href="#" target="_blank">View Webpage</a></div>
+                                    <div class="cover__btn"><a href="#" target="_blank">View Repo on GitHub</a></div>
+                                    <p class="cover__tags">html/scss/php/grid/pixel-perfect</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item portfolio-04">
+                            <div class="portfolio-thumb">
+                                <img src="./images/Screen Shot 2020-08-27 at 01.12.50.png" height="auto" alt="Work 04">
+                                <div class="cover bottom">
+                                    <h2 class="cover__title">Hotel Website</h2>
+                                    <p class="cover__intro">Multipage website, first training project with JS/Jquery</p>
+                                    <div class="cover__btn"><a href="#" target="_blank">View Webpage</a></div>
+                                    <div class="cover__btn"><a href="#" target="_blank">View Repo on GitHub</a></div>
+                                    <p class="cover__tags">html/css/js/jquery/adaptive/multipage</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item portfolio-05">
+                            <div class="portfolio-thumb">
+                                <img src="./images/Screen Shot 2020-08-27 at 01.05.35.png" height="auto" alt="Work 06">
+                                <div class="cover bottom">
+                                    <h2 class="cover__title">Social Network</h2>
+                                    <p class="cover__intro">SPA photoblogging platform - used for learning React/Redux. In process</p>
+                                    <div class="cover__btn"><a href="#" target="_blank">View Webpage</a></div>
+                                    <div class="cover__btn"><a href="#" target="_blank">View Repo on GitHub</a></div>
+                                    <p class="cover__tags">react/redux/spa</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- <section>
+
+                </section> -->
+            </main>
+        
+            <footer class="footer" id="contacts">
+                <h2 class="footer__h2">Get in Touch</h2>
+                <p class="footer__after-title">Will be glad to contact. Send me message without hesitated</p>
+                <div class="flex-footer">
+                    <ul class="my-contacts">
+                        <li>Phone/Telegram: <a href="tel:+375293858545">+375 29 3858545</a></li>
+                        <li>Mail: <a href="mailto:ak.alina.kalinovskaya@gmail.com">ak.alina.kalinovskaya@gmail.com</a></li>
+                    </ul>
+
+                    <ul class="social-network">
+                        <li class="social-network__item"><a class="social-network__link" href=""><i class="zmdi zmdi-github-alt"></i></a></li>
+                        <li class="social-network__item"><a class="social-network__link" href=""><i class="zmdi zmdi-facebook"></i></a></li>
+                        <li class="social-network__item"><a class="social-network__link" href=""><i class="zmdi zmdi-instagram"></i></a></li>
+                        <li class="social-network__item"><a class="social-network__link" href=""><i class="zmdi zmdi-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
     </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="./scripts/form.js"></script>
+<script src="./scripts/language.js"></script>
+<script src="./scripts/theme.js"></script>
+<script src="./scripts/script.js"></script>
 </body>
 </html>
