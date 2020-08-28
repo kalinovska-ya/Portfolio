@@ -9,7 +9,7 @@
 .box-about {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: flex-start;
 
     &__h2 {
         margin-top: 12px;
@@ -20,7 +20,7 @@
     &__front {
         width: 280px; 
         margin: 0 auto;
-        // height: 100%;
+        height: 100%;
         // height: auto;
         margin-bottom: 60px;
         border-radius: 2px;
