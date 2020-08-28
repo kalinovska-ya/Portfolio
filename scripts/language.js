@@ -50,6 +50,10 @@ const lang = {
       "en": "Full CV you may see ",
       "ru": "Полное резюме можно посмотреть "
     },
+    "here.key": {
+      "en": "here",
+      "ru": "здесь"
+    },
     "work.title.key": {
       "en": "My Portfolio",
       "ru": "Портфолио работ"
