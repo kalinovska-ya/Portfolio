@@ -160,13 +160,11 @@
 
 .cv {
     margin-top: 60px;
-    font-size: 20px;
 
     &__link {
         font-weight: 600;
         font-size: 1.1em;
         transition: .2s;
-        // color: $red-color;
 
         &:hover {
             color: $red-color;
