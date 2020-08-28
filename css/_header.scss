@@ -11,6 +11,14 @@
     overflow: hidden;
 }
 
+.wrapper.en {
+        animation: 2.5s ease both fade2;
+}
+
+.wrapper.ru {
+        animation: 2.5s ease both fade2;
+}
+
 .bg-wrapper.dark {
     background-image: url(../images/dark-theme.jpg);
         animation: 2.5s ease both fade;
@@ -22,6 +30,16 @@
 }
 
 @keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade2 {
     0% {
         opacity: 0;
     }
@@ -67,6 +85,7 @@
 
     &__link {
     color: $text-color;
+    font-weight: 500;
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: .3s;

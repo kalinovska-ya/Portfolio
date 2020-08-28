@@ -129,6 +129,7 @@ const lang = {
 }
 
 const languageChangeSelect = document.querySelector('#language-change-checkbox');
+const wrapper = document.querySelector('.wrapper');
 
 const setNewLanguage = (code) => {
     const tags = document.querySelectorAll('[data-langkey]');
@@ -140,7 +141,18 @@ const setNewLanguage = (code) => {
 }
 
 languageChangeSelect.addEventListener('change', (e) => {
-  	const lang = e.target.checked ? 'ru' : 'en';
+    const lang = e.target.checked ? 'ru' : 'en';
+
+    if (lang == 'ru') {
+        wrapper.classList.remove('en');
+        void wrapper.offsetWidth;
+        wrapper.classList.add('ru');
+    } else if (lang == 'en') {
+        wrapper.classList.remove('ru');
+      	void wrapper.offsetWidth;
+      	wrapper.classList.add('en');
+    }
+
   	localStorage.setItem('language', lang)
   	setNewLanguage(lang)
 })

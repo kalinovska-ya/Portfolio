@@ -25,6 +25,12 @@ body {
   height: 100%;
   overflow: hidden;
 }
+.all-page .wrapper.en {
+  animation: 2.5s ease both fade2;
+}
+.all-page .wrapper.ru {
+  animation: 2.5s ease both fade2;
+}
 .all-page .bg-wrapper.dark {
   background-image: url(../images/dark-theme.jpg);
   animation: 2.5s ease both fade;
@@ -34,6 +40,14 @@ body {
   animation: 2.5s ease both fade;
 }
 @keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade2 {
   0% {
     opacity: 0;
   }
@@ -72,6 +86,7 @@ body {
 }
 .all-page .nav-menu__link {
   color: #22222b;
+  font-weight: 500;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: 0.3s;
@@ -590,6 +605,12 @@ body {
   height: 100%;
   overflow: hidden;
 }
+.all-page[data-theme=dark] .wrapper.en {
+  animation: 2.5s ease both fade2;
+}
+.all-page[data-theme=dark] .wrapper.ru {
+  animation: 2.5s ease both fade2;
+}
 .all-page[data-theme=dark] .bg-wrapper.dark {
   background-image: url(../images/dark-theme.jpg);
   animation: 2.5s ease both fade;
@@ -599,6 +620,14 @@ body {
   animation: 2.5s ease both fade;
 }
 @keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade2 {
   0% {
     opacity: 0;
   }
@@ -637,6 +666,7 @@ body {
 }
 .all-page[data-theme=dark] .nav-menu__link {
   color: #FFFDEC;
+  font-weight: 500;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: 0.3s;

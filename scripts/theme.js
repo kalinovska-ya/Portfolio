@@ -17,13 +17,13 @@ if (currentTheme) {
 function switchTheme(e) {
     if (e.target.checked) {
       	page.setAttribute("data-theme", "dark");
-      	localStorage.setItem("theme", "dark");
+		  localStorage.setItem("theme", "dark");
       	wallpaper.classList.remove('light');
       	void wallpaper.offsetWidth;
       	wallpaper.classList.add('dark');
     } else {
       	page.setAttribute("data-theme", "light");
-      	localStorage.setItem("theme", "light");
+		  localStorage.setItem("theme", "light");
       	wallpaper.classList.remove('dark');
       	void wallpaper.offsetWidth;
       	wallpaper.classList.add('light');
