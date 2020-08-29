@@ -202,4 +202,13 @@
             max-width: none;  
         } 
     }
+    .progress-bar__line {
+        margin-left: 6px;
+    }
+    .progress-bar__line::before {
+        content: "\27e9";
+        font-size: 23px;
+        top: calc(50% - 13px);
+        left: -6px;
+    }
 }

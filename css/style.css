@@ -365,6 +365,15 @@ body {
     max-height: none;
     max-width: none;
   }
+  .all-page .progress-bar__line {
+    margin-left: 6px;
+  }
+  .all-page .progress-bar__line::before {
+    content: "⟩";
+    font-size: 23px;
+    top: calc(50% - 13px);
+    left: -6px;
+  }
 }
 .all-page .portfolio-block {
   padding: 0 50px;
@@ -945,6 +954,15 @@ body {
     margin-top: 60px;
     max-height: none;
     max-width: none;
+  }
+  .all-page[data-theme=dark] .progress-bar__line {
+    margin-left: 6px;
+  }
+  .all-page[data-theme=dark] .progress-bar__line::before {
+    content: "⟩";
+    font-size: 23px;
+    top: calc(50% - 13px);
+    left: -6px;
   }
 }
 .all-page[data-theme=dark] .portfolio-block {
