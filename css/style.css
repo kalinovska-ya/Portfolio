@@ -362,6 +362,8 @@ body {
   }
   .all-page .box-about-item:last-child {
     margin-top: 60px;
+    max-height: none;
+    max-width: none;
   }
 }
 .all-page .portfolio-block {
@@ -941,6 +943,8 @@ body {
   }
   .all-page[data-theme=dark] .box-about-item:last-child {
     margin-top: 60px;
+    max-height: none;
+    max-width: none;
   }
 }
 .all-page[data-theme=dark] .portfolio-block {

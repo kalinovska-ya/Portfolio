@@ -197,7 +197,9 @@
         }
 
         &-item:last-child{
-            margin-top: 60px;   
+            margin-top: 60px;
+            max-height: none;
+            max-width: none;  
         } 
     }
 }
